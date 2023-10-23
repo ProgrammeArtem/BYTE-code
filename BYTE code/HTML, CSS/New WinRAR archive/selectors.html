@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Intro to CSS</title>
+    <style>
+        /* CSS Selectors */
+
+        /* create selector:
+            type {
+                property: value;
+                property: value;
+                ...
+            }
+        */
+
+        /* ------------- tag selector ------------- */
+        /* tag-name { ... } */
+        body {
+            /* find available font starting from the left one */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1,
+        h2 {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            border: 2px solid lightblue;
+            border-radius: 8px;
+            box-shadow: 2px 6px 18px black;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            line-height: 130%;
+        }
+
+        code {
+            font-family: monospace;
+            font-size: 18px;
+            background-color: black;
+            color: white;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        mark {
+            text-transform: uppercase;
+            font-weight: 200;
+            letter-spacing: 10px;
+            background-color: lightskyblue;
+        }
+
+        /* ------------- class selector ------------- */
+        /* .class-name { ... } */
+        .main-word {
+            color: gray;
+            font-size: 22px;
+            border: 1px solid gray;
+            padding: 1px;
+        }
+
+        .styled {
+            text-decoration: underline;
+            font-weight: normal;
+        }
+
+        .super-text {
+            font-family: fantasy;
+            text-decoration: underline;
+            color: dodgerblue;
+        }
+
+        /* font types */
+        .serif-font {
+            font-family: serif;
+        }
+
+        .sans-serif-font {
+            font-family: sans-serif;
+        }
+
+        .monospace-font {
+            font-family: monospace;
+        }
+
+        .cursive-font {
+            font-family: cursive;
+        }
+
+        .fantasy-font {
+            font-family: fantasy;
+        }
+
+        /* ------------- id selector ------------- */
+        /* #id-value { ... } */
+        #main-title {
+            background-color: rgb(3, 3, 90);
+            border-width: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-title">Intro to <abbr title="Cascading Style Sheets">CSS</abbr></h1>
+    <p><strong>CSS</strong> is the language we use to style an HTML document. CSS describes how HTML elements should be
+        displayed.</p>
+
+    <h2 style="background-color: darkblue; color: white; text-align: center;">Inline styles</h2>
+    <!-- <tag style="properties..."> -->
+    <p style="color: gray; font-weight: 700;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum vel
+        molestias laudantium consequatur harum
+        exercitationem atque modi soluta velit ratione?</p>
+    <p style="color: gray; font-weight: 700;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum vel
+        molestias laudantium consequatur harum
+        exercitationem atque modi soluta velit ratione?</p>
+
+    <h2>Styling using CSS Selectors</h2>
+    <h3>Example of using tag selectors</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum harum dolorum itaque expedita, exercitationem,
+        saepe placeat aliquam vitae tenetur, id eligendi. Deleniti odio accusamus debitis corrupti soluta, totam vero
+        consectetur architecto voluptas voluptatum sequi mollitia incidunt ea obcaecati dolore assumenda! Nisi quasi
+        maiores vel eligendi? Eligendi amet qui vitae delectus!</p>
+    <p>Lorem ipsum <mark>dolor sit</mark> amet consectetur adipisicing elit. <mark>Dolor</mark> pariatur veniam numquam
+        sed recusandae, nihil
+        quaerat! Placeat <mark>similique deserunt quis</mark>.</p>
+
+    <h2>Headint title level 2</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, reiciendis!
+        create varible: <code>int a = 10;</code>
+        consoel output: <code>Console.WriteLine();</code>
+    </p>
+
+    <hr>
+
+    <h3>Example of using class selectors</h3>
+    <p><strong class="main-word">Lorem</strong> ipsum dolor, sit amet consectetur <strong
+            class="styled">adipisicing</strong> elit. <strong class="main-word">Quas</strong>, excepturi. Nam
+        quibusdam, sunt laudantium quas
+        sed temporibus accusamus <strong class="styled">perferendis consequuntur nemo</strong>, dolorum in placeat
+        aspernatur. Numquam
+        a quae
+        praesentium eum!</p>
+    <p>
+        Lorem ipsum <span class="super-text">dolor sit</span> amet consectetur adipisicing elit. Voluptatum provident,
+        omnis ipsa qui
+        repudiandae et
+        iste facilis odio <span class="super-text">praesentium possimus</span> dolorum amet libero ipsum atque eveniet
+        quidem expedita
+        laboriosam a rem
+        explicabo <span class="super-text">cum ut facere</span>. Magni nobis odio cumque cum.
+    </p>
+
+    <h2>Standart Font types</h2>
+
+    <h3>Serif font example</h3>
+    <p class="serif-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem assumenda repellendus cumque
+        aperiam doloribus
+        exercitationem adipisci sunt vel accusamus dolores sint maiores est ducimus, nam atque eum inventore autem quos!
+    </p>
+
+    <h3>Sans-Serif font example</h3>
+    <p class="sans-serif-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem assumenda repellendus
+        cumque aperiam doloribus
+        exercitationem adipisci sunt vel accusamus dolores sint maiores est ducimus, nam atque eum inventore autem quos!
+    </p>
+
+    <h3>Monospace font example</h3>
+    <p class="monospace-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem assumenda repellendus
+        cumque aperiam doloribus
+        exercitationem adipisci sunt vel accusamus dolores sint maiores est ducimus, nam atque eum inventore autem quos!
+    </p>
+
+    <h3>Cursive font example</h3>
+    <p class="cursive-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem assumenda repellendus
+        cumque aperiam doloribus
+        exercitationem adipisci sunt vel accusamus dolores sint maiores est ducimus, nam atque eum inventore autem quos!
+    </p>
+
+    <h3>Fantasy font example</h3>
+    <p class="fantasy-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem assumenda repellendus
+        cumque aperiam doloribus
+        exercitationem adipisci sunt vel accusamus dolores sint maiores est ducimus, nam atque eum inventore autem quos!
+    </p>
+</body>
+
+</html>

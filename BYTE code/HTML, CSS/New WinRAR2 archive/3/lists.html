@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        .custom-ul-style {
+            list-style-type: circle;
+            list-style-position: inside;
+            /* padding-left: 0; */
+            list-style-image: url(./markers/leaf.png);
+        }
+
+        .custom-ol-style {
+            list-style-type: upper-roman;
+        }
+
+        /* ::marker - pseudo class to style the list item marker only */
+        .custom-ol-style li::marker {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* selector: parent child */
+        /* style list on level 2> */
+        ol ul {
+            color: green;
+        }
+
+        dt {
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-size: 32px;
+        }
+
+        dd {
+            background-color: lightblue;
+            color: black;
+            padding: 10px;
+            margin-left: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Working with Lists in HTML</h1>
+
+    <h2>Unordered lists</h2>
+    <ul class="custom-ul-style">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, atque.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+        <li>Delectus, id corrupti quos quae distinctio maiores optio!</li>
+        <li>Temporibus, earum exercitationem quasi ullam sint fugit deserunt.</li>
+    </ul>
+
+    <h2>Ordered lists</h2>
+    <ol class="custom-ol-style">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, atque.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+        <li>Delectus, id corrupti quos quae distinctio maiores optio!</li>
+        <li>Temporibus, earum exercitationem quasi ullam sint fugit deserunt.</li>
+    </ol>
+    
+    <h3>List attributes</h3>
+    <ol start="10" reversed>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, atque.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+        <li value="15">Delectus, id corrupti quos quae distinctio maiores optio!</li>
+        <li>Temporibus, earum exercitationem quasi ullam sint fugit deserunt.</li>
+    </ol>
+
+    <h2>Definition lists</h2>
+    <dl>
+        <!-- definition title -->
+        <dt>HTML</dt>
+        <!-- definition description -->
+        <dd>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed
+            in a web browser.</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written
+            in a markup language such as HTML or XML.</dd>
+    </dl>
+
+    <h2>Multilevel Lists</h2>
+    <ol>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, qui.</li>
+        <li>Repellat doloribus neque repudiandae facere temporibus, vel eveniet explicabo necessitatibus.
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Ut esse praesentium itaque aliquam?</li>
+                <li>Explicabo perspiciatis odio minima sint.</li>
+                <li>Sint, accusamus? Fugiat, sint minus!</li>
+            </ul>
+        </li>
+        <li>Aliquam commodi impedit dolor necessitatibus reiciendis, repellendus blanditiis tenetur neque.
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Quibusdam doloremque maxime suscipit earum.</li>
+                    </ul>
+                </li>
+                <li>Est deleniti quam amet ea vero dolore.</li>
+                <li>Mollitia voluptatibus totam voluptate assumenda vitae. Ratione.</li>
+            </ul>
+        </li>
+        <li>Voluptates, exercitationem soluta sint at laudantium libero fugit rem autem.</li>
+        <li>Aspernatur doloremque recusandae reprehenderit exercitationem, eaque repellendus laboriosam libero dolor.
+        </li>
+    </ol>
+</body>
+
+</html>

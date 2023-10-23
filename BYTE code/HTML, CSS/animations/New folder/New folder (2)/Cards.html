@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards</title>
+
+    <style>
+        /* * {
+            box-sizing: border-box;
+        } */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            text-align: center;
+
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+
+            width: 220px;
+            margin: 15px;
+            overflow: hidden;
+
+            transition: all .5s;
+        }
+
+        .card:hover {
+            margin: -20px;
+            padding: 35px;
+            z-index: 1; 
+
+            /* transform: scale(1.25); */
+        }
+       
+        .card h3 {
+            text-transform: uppercase;
+            font-size: small;
+        }
+
+        hr {
+            height: 4px;
+            background-color: black;
+            margin-left: -35px;
+            margin-right: -36px;
+        }
+
+        .card p {
+            font-weight: 1000;
+            font-size: 12px;
+        }
+
+        .card p.per-month {
+            color: rgb(209, 209, 209);
+            font-weight: 1000;
+            font-size: 14px;
+
+            margin: 0px auto 20px;
+        }
+
+        .card p.sale {
+            font-size: 34px;
+            margin: 15px auto 5px;
+        }
+
+        .card button {
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            text-transform: uppercase;
+
+            border: 0px;
+            padding: 10px 35px;
+            margin: 20px;
+
+            transition: .5s;
+        }
+
+        .card-red hr {
+            background-color: rgb(158, 38, 38);
+        }
+
+        .card-red button {
+            background-color: rgb(158, 38, 38);
+        }
+
+        .card-red button:hover {
+            background-color: rgb(106, 25, 25);
+        }
+
+        .card-yellow hr {
+            background-color: rgb(209, 141, 45);
+        }
+
+        .card-yellow button {
+            background-color: rgb(209, 141, 45);
+        }
+
+        .card-yellow button:hover {
+            background-color: rgb(137, 92, 29);
+        }
+
+        .card-blue hr {
+            background-color:rgb(0, 0, 175);
+        }
+
+        .card-blue button {
+            background-color: rgb(0, 0, 175);
+        }
+
+        .card-blue button:hover {
+            background-color: rgb(0, 0, 109);
+        }
+
+        .card-green hr {
+            background-color:rgb(18, 152, 56);
+        }
+
+        .card-green button {
+            background-color:rgb(18, 152, 56);
+        }
+
+        .card-green button:hover {
+            background-color:rgb(11, 96, 35);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card card-red">
+            <h3>enterprise</h3>
+
+            <hr>
+
+            <p class="sale">$69</p>
+
+            <p class="per-month">per month</p>
+
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum dolor sit</p> 
+            <p>ipsum dolor sit</p>
+            <p>Lorem ipsum dolor</p>
+
+            <button>buy</button>
+        </div>
+        <div class="card card-yellow">
+            <h3>professional</h3>
+
+            <hr>
+
+            <p class="sale">$29</p>
+
+            <p class="per-month">per month</p>
+
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum dolor sit</p> 
+            <p>ipsum dolor sit</p>
+            <p>Lorem ipsum dolor</p>
+
+            <button>buy</button>
+        </div>
+        <div class="card card-blue">
+            <h3>standard</h3>
+
+            <hr>
+
+            <p class="sale">$19</p>
+
+            <p class="per-month">per month</p>
+
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum dolor sit</p> 
+            <p>ipsum dolor sit</p>
+            <p>Lorem ipsum dolor</p>
+
+            <button>buy</button>
+        </div>
+        <div class="card card-green">
+            <h3>basic</h3>
+
+            <hr>
+
+            <p class="sale">$9</p>
+
+            <p class="per-month">per month</p>
+
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum dolor sit</p> 
+            <p>ipsum dolor sit</p>
+            <p>Lorem ipsum dolor</p>
+
+            <button>buy</button>
+        </div>
+    </div>
+</body>
+</html>

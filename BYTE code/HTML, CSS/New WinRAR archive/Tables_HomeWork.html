@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables_HomeWork</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px 80px;
+        }
+
+        table {
+            width: 100%;
+            border-radius: 10px;
+            background-color: gainsboro;
+            color: black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        th:nth-child(1){
+            border-radius: 10px;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        th:nth-child(2){
+            border-radius: 0px;
+        }
+
+        th:nth-child(3){
+            border-radius: 0px;
+        }
+
+        th:nth-child(4){
+            border-radius: 0px;
+        }
+
+        th:nth-child(5){
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        th,
+        td {
+            padding: 10px 25px;
+        }
+
+        th {
+            color: white;
+        }
+
+        th:nth-child(1){
+            background-color: #7987AA;
+        }
+        th:nth-child(2){
+            background-color: #4F628D;
+        }
+        th:nth-child(3){
+            background-color: #2F4173;
+        }
+        th:nth-child(4){
+            background-color: #162954;
+        }
+        th:nth-child(5){
+            background-color: #071538;
+        }
+
+        
+        tr:nth-child(even) td:nth-child(odd){
+            background-color: #ECECEC;
+        }
+        
+        tr:nth-child(4) td:nth-child(1){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(6) td:nth-child(1){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(1) td:nth-child(2){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(3) td:nth-child(2){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(5) td:nth-child(2){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(7) td:nth-child(2){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(2) td:nth-child(3){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(4) td:nth-child(3){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(6) td:nth-child(3){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(1) td:nth-child(4){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(3) td:nth-child(4){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(5) td:nth-child(4){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(7) td:nth-child(4){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(2) td:nth-child(5){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(4) td:nth-child(5){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(6) td:nth-child(5){
+            background-color: #ECECEC;
+        }
+
+        tr:nth-child(2) td:nth-child(2){
+            background-color: #F3F3F3;
+        }
+
+        tr:nth-child(4) td:nth-child(2){
+            background-color: #F3F3F3;
+        }
+
+        tr:nth-child(6) td:nth-child(2){
+            background-color: #F3F3F3;
+        }
+
+        tr:nth-child(2) td:nth-child(4){
+            background-color: #F3F3F3;
+        }
+
+        tr:nth-child(4) td:nth-child(4){
+            background-color: #F3F3F3;
+        }
+
+        tr:nth-child(6) td:nth-child(4){
+            background-color: #F3F3F3;
+        }
+
+        td:first-child {
+            text-align: left;               
+        }
+
+        .col-1{
+            width: 17%;
+        }
+
+        .col-2 {
+            width: 7%;
+        }
+
+        .col-3 {
+            width: 7%;
+        }
+
+        .col-4 {
+            width: 7%;
+        }
+
+        .col-5 {
+            width: 7%;
+        }
+
+        td span{
+            border: 1px solid #c0c0c0;
+            border-radius: 5%;
+            width: 100px;
+            height: 23px;
+            display: inline-block;
+            line-height: 25px;
+            background-color: #DBDBDB;
+        }
+
+        .font_size{
+            font-size: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <table>
+        <colgroup>  
+            <col class="col-1">
+            <col class="col-2">
+            <col class="col-3">
+            <col class="col-4">
+            <col class="col-5">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Choose your plan</th>
+                <th>starter<br><br><span class="font_size">$10</span><br>per month</th>
+                <th>econom<br><br><span class="font_size">$30</span><br>per month</th>
+                <th>standard<br><br><span class="font_size">$59</span><br>per month</th>
+                <th>professional<br><br><span class="font_size">$99</span><br>per month</th>
+            </tr>
+        </thead>        
+        <tbody>
+            <tr>
+                <td>Amount of space</td>
+                <td>20GB</td>
+                <td>40GB</td>
+                <td>110GB</td>
+                <td>Unlimeted</td>
+            </tr>
+            <tr>
+                <td>Bandwidth per month</td>
+                <td>120GB</td>
+                <td>240Gb</td>
+                <td>610GB</td>
+                <td>1300GB</td>
+            </tr>
+            <tr>
+                <td>Email accounts</td>
+                <td>1</td>
+                <td>15</td>
+                <td>60</td>
+                <td>Unlimeted</td>
+            </tr>
+            <tr>
+                <td>MySQL databases</td>
+                <td>1</td>
+                <td>15</td>
+                <td>60</td>
+                <td>Unlimeted</td>
+            </tr>
+            <tr>
+                <td>25h support</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Support tickets per month</td>
+                <td>2</td>
+                <td>6</td>
+                <td>14</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><span>START</span></td>
+                <td><span>START</span></td>
+                <td><span>START</span></td>
+                <td><span>START</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

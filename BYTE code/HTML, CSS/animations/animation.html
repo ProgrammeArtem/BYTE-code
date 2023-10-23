@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    .cube, .cube2{
+        width: 100px;
+        height: 100px;
+        border: 2px solid #000;      
+        animation: cubs 3s ease infinite;
+    }
+
+    .cube:active, .cube2:active{
+       filter: blur(50px);
+    }
+
+    .cube{
+        background-color: rgb(0, 123, 255);
+    }
+    .cube:hover{
+        background-color: #ffee00;
+    }
+
+    .cube2{
+        background-color: #ffee00;
+    }
+
+     .cube2:hover{
+        background-color: rgb(0, 123, 255);
+    }  
+
+
+    .boal{
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 100px;
+        position: absolute;
+        left: 40%;
+        bottom: 90%;
+        transition: all .50s ease-in-out;
+    }
+
+    .boal:active{
+        transform: translate(200%, 10%);
+    }
+
+    @keyframes cubs {
+            0% {
+                margin-left: 0;
+                margin-bottom: 0%;
+            }
+
+            20% {
+                margin-left: 10%;
+                margin-bottom: 10%;
+            }
+
+            50% {
+                margin-left: 30%;
+                margin-bottom: 30%;
+            }
+
+            75% {
+                margin-left: 20%;
+                margin-bottom: 20%;
+            }
+
+            80% {
+                margin-left: 10%;
+                margin-bottom: 10%;
+            }
+
+            100% {
+                margin-left: 0%;
+                margin-bottom: 0%;
+            }
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="cube"></div>
+    <div class="cube2"></div>
+    <div class="boal"></div>
+</body>
+</html>

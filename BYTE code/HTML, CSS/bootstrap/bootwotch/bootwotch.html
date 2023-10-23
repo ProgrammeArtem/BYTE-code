@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-primary px-5" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-sm-2" type="search" placeholder="Search">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" data-bs-toggle="tab" href="#home" aria-selected="false" role="tab" tabindex="-1">Home</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" data-bs-toggle="tab" href="#profile" aria-selected="true" role="tab">Profile</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link disabled" href="#" aria-selected="false" tabindex="-1" role="tab">Disabled</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" style="">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade" id="home" role="tabpanel">
+          <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+        </div>
+        <div class="tab-pane fade active show" id="profile" role="tabpanel">
+          <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+        </div>
+        <div class="tab-pane fade" id="dropdown1">
+          <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+        </div>
+        <div class="tab-pane fade" id="dropdown2">
+          <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+        </div>
+      </div>
+
+
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="">
+        <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked="">
+        <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked="">
+        <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+      </div>
+
+      <div class="progress m-5">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+      </div>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 m-5 w-25">
+        <h3 class="card-header">Card header</h3>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+        </div>
+        <img src="data:image/jpeg;base64,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" alt="">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body">
+            <button type="button" class="btn btn-primary">Primary</button>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+        <div class="card-footer text-muted">
+          2 days ago
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

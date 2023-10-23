@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+
+    <style>
+
+        body{
+            background-color: rgb(123, 123, 123);
+            font-family: sans-serif;
+        }
+
+        header{
+            margin: 2% 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 200%;
+            gap: 10%;
+        }
+
+        .logo{
+            text-decoration: none;
+            color: rgb(0, 145, 255);
+            font-weight: bold;
+        }
+
+        .logo span{
+            color: rgb(255, 247, 0);
+        }
+
+        .navbar{
+            display: flex;
+            list-style: none;
+            gap: 15%;
+            color: white;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            transition: color .4s ease-in-out;
+        }
+
+        .navbar li a:hover{
+            color: rgb(174, 174, 174);
+        }
+
+        .menu{
+            width: 7%;
+            height: 5%;
+            display: none;    
+        }
+
+        @media screen and (max-width: 800px) {
+            .menu{
+                display: block;
+                padding: 10%;
+            }
+
+            .navbar{
+                display: none;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+
+        <a class="logo" href="#">Lo<span>go</span></a>
+
+        <ul class="navbar">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Html</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+
+        <img class="menu" src="images.png">
+
+    </header>
+
+</body>
+</html>

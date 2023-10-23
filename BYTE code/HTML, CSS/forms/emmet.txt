@@ -1,0 +1,8 @@
+<!-- abbreviation: 
+        emmet:           tag            	-> <tag></tag> 
+        add class:       tag.selected     -> <tag class="selected"></tag>
+        add id:           tag#main         -> <tag id="main"></tag>
+        add child:      tag>span          -> <tag><span></span></tag> 
+        add content:  tag{hello}     	-> <tag>hello</tag>
+        multiple:       tag*3          	-> <tag></tag><tag></tag><tag></tag>
+    -->

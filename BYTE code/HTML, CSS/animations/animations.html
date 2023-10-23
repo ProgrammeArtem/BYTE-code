@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+        #square {
+            margin: 10px;
+            height: 50px;
+            width: 50px;
+            background-color: lightcoral;
+            position: fixed;
+
+            transition: all 5s;
+
+            /* animation: name duration timing-function(ease) delay(0) iteration-count direction fill-mode; */
+            animation: move 3s ease infinite alternate;
+        }
+
+        #square:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes move {
+            from {
+                left: 95vw;
+                top: 0;
+                border-radius: 0;
+            }
+
+            to {
+                left: 0;
+                top: 95vh;
+                border-radius: 50%;
+            }
+        }
+
+        #bullet {
+            margin: 10px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: gray;
+
+            animation: falling 2s ease-in infinite;
+        }
+
+        #bullet:active {
+            /* animation: name duration funciton delay iteration direction fill-mode */
+            /* animation: morganie 1s ease 0s infinite alternate; */
+        }
+
+        @keyframes falling {
+            0% {
+                margin-top: 0;
+            }
+
+            80% {
+                margin-top: 70%;
+            }
+
+            90% {
+                margin-top: 60%;
+            }
+
+            95% {
+                margin-top: 70%;
+            }
+
+            98% {
+                margin-top: 65%;
+            }
+
+            100% {
+                margin-top: 70%;
+            }
+        }
+
+        @keyframes morganie {
+            0% {
+                background-color: white;
+            }
+
+            50% {
+                background-color: black;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bullet"></div>
+    <div id="square"></div>
+</body>
+
+</html>

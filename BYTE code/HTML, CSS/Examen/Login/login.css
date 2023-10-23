@@ -1,0 +1,99 @@
+  body {
+    margin: 0 35%;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f3f0ed;
+  }
+
+  .btn{
+      padding: 15px 10px;
+      border: none;
+      background-color: #000;
+      border-radius: 0;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+  }
+
+  .btn:hover{
+      cursor: pointer;
+      background-color: #673d14;
+  }  
+
+  .p1{
+    line-height: 10%;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .custom-checkbox {
+    display: inline-block;
+    position: relative;
+    padding: 20px; 
+    line-height: 1.5em; 
+  }
+  
+  .custom-checkbox input[type="checkbox"] {
+    display: none; 
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em; 
+    height: 1em; 
+    background-color: transparent;
+    color: #000; 
+    font-size: 1.2em;
+    line-height: 0.90em; 
+    text-align: center;
+    border: 2px solid #000;
+  }
+
+  .title_p{
+    position: absolute;
+    top: 0;
+    left: 30px; /* Уберите margin и добавьте left */
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    white-space: nowrap; /* Добавлено */
+  }
+
+    input:hover{
+      cursor: pointer;
+      border: 2px solid #673d14;
+  }
+
+    input{
+      margin: 2% 0;
+      border: 2px solid #000;
+      width: 350px;
+      height: 40px;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkbox{
+    margin: 2% 0;
+    display: flex;
+    gap: 47%;
+  }
+
+  .checkbox a{
+    color: #000;
+    font-size: 15px;
+  }
+
+  .login_btn{
+    padding: 15px 40%;
+  }

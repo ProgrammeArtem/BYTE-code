@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card game</title>
+    <style>
+        body {
+            background-color: rgb(245, 245, 245);
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 660px;
+
+            /* all sides */
+            margin: 10px;
+            /* top/bottom left/right */
+            margin: 10px auto;
+            /* top left/right bottom */
+            margin: 10px auto 20px;
+            /* top right bottom left */
+            margin: 0 auto 20px auto;
+
+            /* specific side */
+            margin-top: 40px;
+        }
+
+        .card {
+            font-size: 48px;
+            background-color: lightgray;
+            padding: 6px 10px;
+        }
+
+        .red {
+            color: rgb(150, 7, 12);
+        }
+    </style>
+</head>
+<body>
+    <!-- ♣♦♥♠ -->
+
+    <h2>Player 1:</h2>
+
+    <p>
+        <span class="card">6♣</span>
+        <span class="card red">7♥</span>
+        <span class="card red">K♥</span>
+        <span class="card">Q♠</span>
+        <span class="card red">9♦</span>
+        <span class="card red">8♦</span>
+    </p>
+
+    <h2>Player 2:</h2>
+    
+    <p>
+        <span class="card">10♣</span>
+        <span class="card red">A♦</span>
+        <span class="card">Q♠</span>
+        <span class="card">J♠</span>
+        <span class="card red">J♦</span>
+        <span class="card red">6♦</span>
+    </p>
+</body>
+</html>

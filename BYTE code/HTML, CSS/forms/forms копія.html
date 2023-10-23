@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            background-color: lightgray;
+            padding: 10px;
+            border-radius: 6px;
+            max-width: 500px;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form>label {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            align-items: center;
+        }
+
+        label input[type="color"] {
+            width: 100%;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        /* Input styling */
+        input {
+            background-color: blanchedalmond;
+            border: none;
+            padding: 5px;
+            border-radius: 4px;
+            transition: .3s;
+            text-align: center;
+        }
+
+        input:focus {
+            outline: none;
+            background-color: rgb(188, 172, 148);
+            box-shadow: 2px 2px 6px gray;
+        }
+
+        button {
+            background-color: rgb(196, 121, 121);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid black;
+            transition: .3s;
+        }
+
+        button:hover {
+            box-shadow: 2px 2px 10px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Working with Forms</h1>
+    <hr>
+
+    <form>
+        <h2>My Form</h2>
+        <!-- <label for="name-input" accesskey="n">Name:</label> -->
+        <!-- <input type="text" id="name-input" /> -->
+
+        <label>Login:
+            <input type="text" placeholder="Enter your name" />
+        </label>
+        <label>Password:
+            <input type="password" />
+        </label>
+        <label>Price:
+            <input type="number" />
+        </label>
+        <label>Date:
+            <input type="date" />
+        </label>
+        <label>Time:
+            <input type="time" />
+        </label>
+        <label>Color:
+            <input type="color" />
+        </label>
+        <label>Color:
+            <input type="color" />
+        </label>
+        <label>Phone:
+            <input type="tel" />
+        </label>
+        <label>Email:
+            <input type="email" />
+        </label>
+        <label>URL Address:
+            <input type="url" />
+        </label>
+        <label>Range:
+            <input type="range" />
+        </label>
+        <label>File:
+            <input type="file" />
+        </label>
+        <label>Check:
+            <input type="checkbox" />
+        </label>
+        <label>Select:
+            <select>
+                <option>Good</option>
+                <option selected>Normal</option>
+                <option>Bad</option>
+            </select>
+        </label>
+        <label>Delivery type:
+            <div>
+                <label>Econom:
+                    <input type="radio" name="type" />
+                </label>
+                <label>Standart:
+                    <input type="radio" name="type" />
+                </label>
+                <label>Fast:
+                    <input type="radio" name="type" />
+                </label>
+            </div>
+        </label>
+        <button type="button">Push Me!</button>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

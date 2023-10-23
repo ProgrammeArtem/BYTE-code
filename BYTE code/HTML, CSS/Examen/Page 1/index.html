@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop - home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="menu_text"><a href="#">ИНФОРМАЦИЯ</a></li>
+                <li class="menu_text"><a href="#news">НОВОСТИ</a></li>
+                <li class="menu_text"><a href="#">ПРАЙС-ЛИСТ</a></li>
+                <li class="menu_text"><a class="shop" href="/Users/macbook/Desktop/Code/BYTE code/HTML, CSS/Examen/Page 2/index2.html">МАГАЗИН</a></li>
+                <li class="menu_text"><a href="#contacts">КОНТАКТЫ</a></li>
+                <li></li>
+                <li class="menu_text b"><a href="/Users/macbook/Desktop/Code/BYTE code/HTML, CSS/Examen/Login/login.html"><i class='bx bx-log-in'></i>ВХОД</a></li>                
+            </ul>
+        </nav>
+    </header>
+
+    <img class="logo" src="img/index-logo 2.png">
+
+    <section class="home">
+
+        <div class="container">
+            <div class="h1">
+                <h3>БЫСТРО</h3>
+                <img src="img/Shape 1 copy 2 2.png">
+                <p>
+                    МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА <br> 
+                    ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ <br> 
+                    ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
+                </p>
+            </div>
+    
+            <div class="h2">
+                <h3>КРУТО</h3>   
+                <img src="img/Shape 1 copy 2 2.png"> 
+                <p>
+                    ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. <br>
+                    МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! <br>
+                    ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+                </p>
+            </div>
+    
+            <div class="h3">
+                <h3>ДОРОГО</h3>
+                <img src="img/Shape 1 copy 2 2.png">
+                <p>
+                    НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ <br> 
+                    МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ <br> 
+                    ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?
+                </p>
+            </div>  
+        </div>             
+    </section>
+
+    <section class="card">
+
+        <div class="news">
+            <div class="news1" id="news">
+                <h1>НОВОСТИ</h1>
+                <p class="p1">
+                    НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ <br>
+                     ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+                </p>
+                <p class="p-title">11 января</p>
+
+                <p class="p2">
+                    В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, <br> 
+                    ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ <br>
+                     СТРОЙНЫЕ РЯДЫ
+                </p>
+                <p class="p-title2">18 января</p>
+
+                <button class="btn">ВСЕ НОВОСТИ</button>
+            </div>       
+
+            <div class="vertical-line"></div>
+            
+            <div class="news1 news2">
+                <h1>ФОТОГАЛЕРЕЯ</h1>
+
+                <div class="img"><img src="img/img.jpeg" alt=""></div>
+
+                <button class="btn btn_news2">НАЗАД</button>
+                <button class="btn btn_news2">ВПЕРЕД</button>
+                
+            </div>   
+        </div>
+
+        <div class="news card_info">
+        
+            <div class="news1 contacts" id="contacts">
+                <h1>КОНТАКТНАЯ ИНФОРМАЦИЯ</h1>
+                <p class="p1">
+                    БАРБЕРШОП «БОРОДИНСКИЙ» <br>
+                    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+                    ТЕЛЕФОН: +7 (495) 666-02-66 <br>
+                </p>
+
+                <p class="p2">
+                    ВРЕМЯ РАБОТЫ: <br>
+                    ПН—ПТ: С 10:00 ДО 22:00 <br>
+                    СБ—ВС: С 10:00 ДО 19:00 <br>
+                </p>
+
+                <button class="btn btn_card">КАК ПРОЕХАТЬ</button>
+                <button class="btn btn_card">ОБРАТНАЯ СВЯЗЬ</button>
+            </div>
+
+            <div class="vertical-line"></div>
+
+            <div class="news1 register">
+
+                <h1>ЗАПИСЯТЬСЯ</h1>
+                <p>
+                    УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ <br>
+                     С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+                </p>
+
+                <form>
+
+                    <div class="input-container">
+                        <div class="line1">
+                            <label>ДАТА
+                                <input type="text" placeholder="08.10.2017">
+                            </label>
+
+                            <label>ВРЕМЯ
+                                <input type="text" placeholder="10:00">
+                            </label>
+                        </div>  
+
+                        <div class="line2">
+                            <label>ВАШЕ ИМЯ
+                                <input type="text" placeholder="Борода">
+                            </label>
+
+                            <label>ТЕЛЕФОН 
+                                <input type="tel" placeholder="+7 123 456-78-90">
+                            </label>
+                        </div>
+                    </div> 
+
+                </form>
+                <a class="btn btn_register">ОТПРАВИТЬ</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="info">
+            БАРБЕРШОП «БОРОДИНСКИЙ» <br>
+            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+            КАК НАС НАЙТИ? <br>
+            ТЕЛЕФОН: +7 (495) 666-02-66 <br>
+        </p>
+
+        <div class="be_friends">
+            <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+                <div class="icons">
+                    <div class="vk"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.513-.743.675-1.021.675-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836-.743 0-2.551-2.729-3.624-5.853-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619 0 .582.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752.324 0 .882.164 2.183 1.417 1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931-.197-.615-.907-1.51-1.849-2.569-.512-.604-1.277-1.254-1.51-1.579-.325-.419-.231-.604 0-.976.001.001 2.672-3.761 2.95-5.04z"></path></svg></a></div>
+                    <div class="facebook"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg></div>
+                    <div class="instagram"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg></a></div>
+                </div>
+        </div>
+
+        <div class="developer">
+            <p>РАЗРАБОТАНО:</p>
+            <a>HTML ACADEMY</a>
+        </div>
+    </footer>
+
+</body>
+</html>

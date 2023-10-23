@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Design</title>
+    <style>
+        body {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0;
+
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: lightskyblue;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: lightcoral;
+            padding: 40px 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        aside {
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+
+        aside:first-child {
+            flex-basis: 25%;
+        }
+
+        aside:last-child {
+            flex-basis: 15%;
+            background-color: lightgray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+
+            flex-basis: 60%;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 800px) {
+            aside:last-child {
+                display: none;
+            }
+
+            main {
+                flex-basis: 70%;
+            }
+
+            aside:first-child {
+                flex-basis: 30%;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .container {
+                flex-direction: column;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            aside:last-child {
+                display: block;
+            }
+
+            main {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <nav>Menu</nav>
+    <div class="container">
+        <aside>Left Block</aside>
+        <main>Main Content</main>
+        <aside>Right Block</aside>
+    </div>
+    <footer>Footer</footer>
+</body>
+
+</html

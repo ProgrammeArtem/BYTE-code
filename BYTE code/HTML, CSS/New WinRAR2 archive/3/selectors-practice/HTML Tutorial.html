@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <style>
+        body{
+            background-color: rgb(245, 245, 245);
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 660px;
+
+            /* all sides */
+            margin: 10px;
+            /* top/bottom left/right */
+            margin: 10px auto;
+            /* top left/right bottom */
+            margin: 10px auto 20px;
+            /* top right bottom left */
+            margin: 0 auto 20px auto;
+
+            /* specific side */
+            margin-top: 40px;
+        }
+        .align_center{
+            text-align: center;
+        }
+        .tag{
+            background-color: #E7E7E7;
+            color: #95554F;
+        }
+        .tags{
+            color: #80989E;
+            background-color: #DCDCDC;
+        }
+        .text{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="align_center">HTML Tutorial</h1>
+
+    <hr>
+
+    <h2 class="align_center">What is HTML?</h2>
+
+    <p><strong>Hypertext Markup Language (<abbr title="HyperText Markup Language">HTML</abbr>)</strong> is the standard markup language for creating web pages and web applications.</p>
+
+    <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. 
+        HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+    </p>
+
+    <p><abbr title="HyperText Markup Language">HTML</abbr> elements are the building blocks of <abbr title="HyperText Markup Language">HTML</abbr> pages. 
+        With <abbr title="HyperText Markup Language">HTML</abbr> constructs, images and other objects such as interactive forms may be embedded into the rendered page. 
+        <abbr title="HyperText Markup Language">HTML</abbr> provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. 
+        <abbr title="HyperText Markup Language">HTML</abbr> elements are delineated by tags, written using angle brackets. 
+        Tags such as <span class="tag"><</span><span class="tag">img</span> <span class="tag">/></span> and <span class="tag"><</span><span class="tag">input</span> <span class="tag">/></span> directly introduce content into the page. Other tags such as <span class="tag"><</span><span class="tag">p</span><span class="tag">></span> surround and provide information about document text and may include other tags as sub-elements. 
+        Browsers do not display the <abbr title="HyperText Markup Language">HTML</abbr> tags, but use them to interpret the content of the page.
+    </p>
+
+    <hr>
+
+    <h2 class="align_center">Markup</h2>
+
+    <p><abbr title="HyperText Markup Language">HTML</abbr> markup consists of several key components, including those called tags (and their attributes), character-based data types, character references and entity references. <abbr title="HyperText Markup Language">HTML</abbr> tags most commonly come in pairs like <span class="tag"><</span><span class="tag">h1</span><span class="tag">></span> and <span class="tag"><</span><span class="tag">/h1</span><span class="tag">></span>, although some represent empty elements and so are unpaired, for example <span class="tag"><</span><span class="tag">img</span><span class="tag">></span>. The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).</p>
+
+    <p>Another important component is the <abbr title="HyperText Markup Language">HTML</abbr> document type declaration, which triggers standards mode rendering.</p>
+
+    <p>The following is an example of the classic "Hello, World!" program:</p>
+
+    <pre class="tag">
+    <span><</span>!DOCTYPE html<span>></span>
+    <span><</span>html<span>></span>
+        <span><</span>head<span>></span>
+            <span><</span>title<span>></span><span class="text">This is a title</span><span><</span>/title<span>></span>
+        <span><</span>/head<span>></span>
+        <span><</span>body<span>></span>
+            <span><</span>p<span>></span><span class="text">Hello world!</span><span><</span>/p<span>></span>
+        <span><</span>/body<span>></span>
+    <span><</span>/html<span>></span>
+    </pre>
+    
+    <p><strong>Tags:</strong> <span class="tags">CodingScripting head HTML Introduction to HTML Landing Links semantics Structure Text</span></p>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        .menu{
+            display: flex;
+            margin: 0;
+            padding: 10px 10%;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #c6d3de;
+        }
+
+        .menu2{
+            display: flex;
+            gap: 10%;
+            position: absolute;
+            align-items: center;
+            left: 23%;
+            flex-direction: row;
+        }
+
+        .menu2 a{
+            color: grey;
+            text-decoration: none;
+        }
+
+        .active{
+            display: flex;
+            align-items: center;
+            background-color: #e6eaf2;
+            width: 200px;
+            height: 50px;
+        }
+
+        .active a{
+            position: absolute;
+            left: 8%;
+        }
+
+        .logo{
+            background-color: #818fa7;
+            width: 110px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .logo h4{
+            position: absolute;
+            left: 141px;
+            bottom: 92%;
+            color: white;
+        }
+
+        .cart{
+            width: 100px;
+            height: 30px;
+            background-color: #47515d;
+            border-radius: 5px;
+        }
+        
+        .cart h4{
+            position: absolute;
+            bottom: 92%;
+            left: 877px;
+            color: white;
+            font-weight: 550;
+        }
+
+        .title1{
+            display: flex;
+            justify-content: space-between;
+            margin: 100px 0;
+            gap: 10px;
+        }
+
+        .title{
+            position: absolute;
+            left: 45px;
+            margin: 50px 27%;
+            font-weight: 500;
+        }
+
+        .box1{
+            background-color: #c6d3de;
+            width: 200px;
+            height: 300px;
+            margin: 0 5%;
+        }
+
+        .box2, .box3, .box4{
+            background-color: #c6d3de;
+            width: 200px;
+            height: 120px;
+        }
+
+        .p1, .p2, .p3, .p4 p{
+            color: #555a60;
+        }
+
+        .p1, .p2, .p3, .p4 h4{
+            color: #5b5d62;
+        }
+
+        footer{
+            position: absolute;
+            bottom: 1px;
+            background-color: #47515d;
+            width: 100%;
+            height: 220px;
+        }
+
+        .footer0{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .column1{
+            position: absolute;
+            left: 30%;
+            bottom: 50px;
+        }
+
+        .column1 a{
+            display: flex;
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .column2{
+            position: absolute;
+            left: 45%;
+            bottom: 50px;
+        }
+
+        .column2 a{
+            display: flex;
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .blok1{
+            margin: 30px 150px;
+            background-color: #818fa7;
+            width: 130px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .blok2{
+            position: absolute;
+            left: 70%;
+            bottom: 50%;
+            background-color: #818fa7;
+            width: 190px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .blok2 h4{
+            position: absolute;
+            bottom: 15px;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="menu">
+
+        <div class="logo"><h4>Logo</h4></div>
+
+    <div class="menu2">
+        <div class="active"><a href="#">Start</a></div>
+        <a href="#">Abaut</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+    </div>
+
+        <div class="cart"><h4>Cart(1)</h4></div>
+
+    </div>
+
+    <h1 class="title">Title 1</h1>
+
+    <div class="title1">
+
+     <div class="box1"></div>
+        <div class="p1">
+            <div class="box2"></div>
+            <h4>Lorem, ipsum dolor.</h4>
+                <p>Lorem ipsum dolor sit amet, <br>
+                    consectetur adipisicing elit. Culpa <br>
+                    reiciendis, consectetur quam id <br>
+                    eum nostrum corrupti veritatis <br>
+                    consequuntur praesentium? Qui, <br>
+                    omnis laboriosam.</p>
+        </div>
+        <div class="p2">
+            <div class="box3"></div>
+            <h4>Lorem, ipsum dolor.</h4>
+             <p>Lorem ipsum dolor sit amet, <br>
+                consectetur adipisicing elit. Culpa <br>
+                reiciendis, consectetur quam id <br>
+                eum nostrum corrupti veritatis <br>
+                consequuntur praesentium? Qui, <br>
+                omnis laboriosam.</p>
+            </div>
+        <div class="p3">
+            <div class="box4"></div>
+            <h4>Lorem, ipsum dolor.</h4>
+            <p>Lorem ipsum dolor sit amet, <br>
+                consectetur adipisicing elit. Culpa <br>
+                reiciendis, consectetur quam id <br>
+                eum nostrum corrupti veritatis <br>
+                consequuntur praesentium? Qui, <br>
+                omnis laboriosam.</p>
+            </div>
+
+    </div>
+
+    <footer>
+
+        <div class="footer0">
+
+        <div class="blok1"></div>
+
+    <div class="column1">
+        <div><a href="#">Home</a></div>
+        <div><a href="#">Abaut</a></div>
+        <div><a href="#">Features</a></div>
+        <div><a href="#">Pricing</a></div>
+        <div><a href="#">Contact us</a></div>
+    </div>
+
+    <div class="column2">
+        <div><a href="#">Blog</a></div>
+        <div><a href="#">Search</a></div>
+        <div><a href="#">T & Cs</a></div>
+        <div><a href="#">Privacu</a></div>
+        <div><a href="#">Community</a></div>
+    </div>
+
+
+    <div class="blok2">
+        <h4>Get our newsletter</h4>
+    </div>
+
+    </div>
+
+    </footer>
+
+</body>
+</html>
